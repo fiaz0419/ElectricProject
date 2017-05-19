@@ -1,0 +1,95 @@
+body {
+	background: #F7F7F7;
+	
+}
+
+#sidebar-wrapper{
+	z-index: 1100;
+	position: absolute;
+	height: 100%;
+	width:0px;
+	overflow-y: hidden;
+	background: #2C3E50;
+}
+
+#page-content-wrapper{
+
+	width: 100%;
+    position: absolute;
+    padding-top: 32px;
+    
+}
+
+#navbar-wrapper .navbar{
+	background: #EDEDED;
+	border-bottom: 1px solid #D9DEE4;
+}
+
+#wrapper.menuDisplayed #sidebar-wrapper{
+
+	width: 230px;
+
+}
+
+#wrapper.menuDisplayed #page-content-wrapper{
+	padding-left: 230px;
+}
+
+#wrapper.menuDisplayed #top-navbar {
+	padding-left: 230px;
+}
+
+.sidebar-nav{
+	padding:0;
+	list-style: none;
+}
+
+.sidebar-nav li{
+	text-indent: 20px;
+	line-height: 40px;
+}
+
+.sidebar-nav li a {
+	display: block;
+	text-decoration: none;
+	color: #ddd;
+}
+
+.sidebar-nav li a:hover {
+	background: #16A085;
+}
+
+#menu-toggle i {
+	font-size: 26px;
+	color: #5A738E;
+}
+
+.nav_title {
+    width: 230px;
+    float: left;
+    background: #2A3F54;
+    border-radius: 0;
+    height: 57px;
+}
+
+.site_title {
+    font-weight: 400;
+    font-size: 22px;
+    width: 100%;
+    line-height: 59px;
+    display: block;
+    height: 55px;
+    margin: 0;
+    padding-left: 10px;
+}
+
+.navbar-brand, .navbar-nav>li>a, .site_title {
+    color: #ECF0F1!important;
+    margin-left: 0!important;		
+}
+
+a.site_title {
+	text-decoration: none;
+}
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="assets/jquery.min.js"></script>
+  <script src="assets/Chart.js"></script> 
+  <meta charset="utf-8">
+  <title>Democli</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+
+
+	<style type="text/css">
+
+		.main-container{
+			display: flex;
+			width: 100%;
+			height: 1220px;
+			margin:0px;
+		}
+
+		.leftdiv {
+			display: none;
+		}		
+		@media (min-width: 786px){
+		.leftdiv{
+			display: block;
+			height: 100%;
+			
+			background: #2A3F54;
+			z-index: 1000;
+		}
+	}
+
+		.rightdiv{
+			height: 100%;
+			
+		}
+		.mybar{
+			background: #EDEDED;
+			border-bottom: 1px solid #D9DEE4;
+			z-index: 1;
+			
+		}
+
+		.brand_title {
+    		font-weight: 400;
+   			font-size: 22px;
+   			color: #FFF;
+   			padding-top: 8px;
+		}
+		.brand_title i {
+    		border: 1px solid #EAEAEA;
+    		padding: 5px 6px;
+    		border-radius: 50%;
+		}
+		.left_panel{
+			position: fixed;
+			top: 51px;
+			background-color: #000
+		}
+		.app_comp{
+			position: absolute;
+    		top: 50px;   
+		}
+
+
+	</style>
+</head>
+<body class="main-container">
+	
+		<div class="leftdiv col-sm-2">
+			<div class="navbar-brand navbar-fixed-top col-sm-2 brand_title"> 
+				<div>
+					<i class="fa fa-paw" aria-hidden="true"></i> My Brand 
+				</div>
+			</div>
+			<div class="left_panel">
+				<div class="profile">
+					<div class="profile_pic"> </div> <div class="profile_name"> fayaz</div>
+				</div>
+			</div> 
+		</div>
+		<div class="rightdiv col-sm-10">
+			<div class="navbar navbar-fixed-top col-sm-offset-2 mybar"> </div>
+			<div class="app_comp"><app-root>Loading...</app-root></div>
+		</div>
+
+
+</body>
+</html>

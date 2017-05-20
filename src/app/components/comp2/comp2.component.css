@@ -29,15 +29,25 @@
 
 .extraBold {
     font-size: 32px;
-    color: #333;
+    color: #16A085;
 }
 
 .medBold {
     font-size: 25px;
-    color: #333;
+    color: #16A085;
 }
 
 .tinyBold {
     font-size: 12px;
     color: #666;
+}
+
+.tile-heading-power{
+    background: #16A085;
+    color: #FFF;
+}
+
+.tile-panel-power{
+    padding-bottom: 5px;
+    padding-top: 5px;
 }

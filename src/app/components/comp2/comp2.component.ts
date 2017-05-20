@@ -35,7 +35,7 @@ export class Comp2Component implements OnInit {
         },
 
         data: {
-            value: '80',
+            value: '90',
             dataRange: [{
                 from: 0,
                 to: 60,

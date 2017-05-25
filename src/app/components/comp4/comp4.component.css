@@ -1,12 +1,9 @@
 .chart-body{
-    height: 300px;
+ height: 24vw;
 }
 
-.myChart{
 
-    height: 300px;
-    width : 800px;
-}
+
 
 .lower-chart {
     height:300px;

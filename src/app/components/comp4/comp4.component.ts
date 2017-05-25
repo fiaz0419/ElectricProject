@@ -27,6 +27,35 @@ this._Comp4Service.getElecHOur()
         this.drachart(this.elechour)
         
   });
+}
+
+getHour(){
+    console.log('clicked');
+    event.preventDefault();
+    jQuery("#myChart").remove();
+    jQuery(".chartjs-hidden-iframe").remove();
+    jQuery("#myChart-parent").append('<canvas id="myChart" style="height: 171px;" class="myChart"></canvas>');
+    this._Comp4Service.getElecHOur()
+    .subscribe(
+        reselechour => {this.elechour = reselechour,
+        this.drachart(this.elechour)
+        
+  });
+
+}
+
+getDays(){
+    console.log('clicked');
+    event.preventDefault();
+    jQuery("#myChart").remove();
+    jQuery(".chartjs-hidden-iframe").remove();
+    jQuery("#myChart-parent").append('<canvas id="myChart" style="height: 171px;" class="myChart"></canvas>');
+    this._Comp4Service.getElecDays()
+    .subscribe(
+        reselechour => {this.elechour = reselechour,
+        this.drachart(this.elechour)
+        
+  });
 
 }
 
@@ -48,22 +77,16 @@ value.forEach(e=> {
 
 var Chart = require('chart.js');
 var ctx = jQuery("#myChart");
+ctx.height = 300;
   
 var data = {
     labels: v_Label,
     datasets: [
         {
             data: v_Data,
-            backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ],
-            hoverBackgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
-            ]
+            backgroundColor:"rgba(24,166,137,0.6)",
+            hoverBackgroundColor:"#18a689"
+            
         }]
 };
 
@@ -71,6 +94,7 @@ var myDoughnutChart = new Chart(ctx, {
     type: 'bar',
     data: data,
     options: {
+        maintainAspectRatio: false,
         animation:{
             animateScale:true
         },
@@ -85,7 +109,7 @@ var myDoughnutChart = new Chart(ctx, {
     }
 });
 
-/*below code for chartist */
+/*below code for chartist 
 
 var datachartist = {
   labels: ['W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10','W1', 'W2', 'W3', 'W4', 'W5', 'W6', 'W7', 'W8', 'W9', 'W10','W1', 'W2', 'W3', 'W4'],
@@ -121,7 +145,7 @@ jQuery('.ct-chart').animate({
 
 jQuery('.datepicker').datepicker();
 
-/* chartist code ends*/
+ chartist code ends*/
 
 }
 

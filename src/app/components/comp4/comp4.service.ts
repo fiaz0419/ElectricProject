@@ -13,7 +13,16 @@ export class Comp4Service {
     getElecHOur(){
         var headers = new Headers();
         headers.append('Content-Type', 'application/json');
-        return this._http.get('http://FKHADER01:3111/api/tasks')
+        return this._http.get('http://FKHADER01:3111/api/hour')
+              .map(res=> res.json())
+              
+
+    }
+
+    getElecDays(){
+        var headers = new Headers();
+        headers.append('Content-Type', 'application/json');
+        return this._http.get('http://FKHADER01:3111/api/days')
               .map(res=> res.json())
               
 

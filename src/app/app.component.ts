@@ -14,8 +14,9 @@ export class AppComponent implements OnInit{
   title = 'app works!';
   constructor(){}
   ngOnInit():any {
-        
+           
   }
+  show : boolean = true ; 
 
 }
      

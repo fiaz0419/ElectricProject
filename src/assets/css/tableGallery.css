@@ -1,0 +1,181 @@
+.tableSlider {
+    width: 60vw;
+    height: 13vw;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.5vw;
+    z-index: 2;
+}
+
+.dg-container {}
+
+#tableSliderContainer {
+    width: 60vw;
+    height: 11.5vw;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1vw;
+    z-index: 3;
+    /* background-color: red; */
+}
+
+.dg-wrapper {
+	width: 23.33vw;
+	height: 10vw;
+	margin: 0 auto;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	-o-perspective: 1000px;
+	-ms-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.dg-wrapper a {
+	width: 23.34vw;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: white;
+	text-decoration: none;
+}
+
+.dg-wrapper a.dg-transition {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.dg-wrapper a img {
+	display: block;
+}
+
+.dg-wrapper a div {
+	text-align: left;
+	font-size: 1.5vw;
+}
+
+.dg-wrapper a div table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.dg-wrapper a div table td {
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+
+.dg-wrapper a div table td img {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dg-wrapper a.dg-center div {
+	display: block;
+}
+
+.dg-container nav {
+	width: 58px;
+	position: absolute;
+	z-index: 1000;
+	bottom: 40px;
+	left: 50%;
+	margin-left: -29px;
+}
+
+.dg-container nav span {
+	float: left;
+	cursor: pointer;
+	width: 24px;
+	height: 25px;
+	opacity: 0.8;
+}
+
+.dg-container nav span:hover {
+	opacity: 1;
+}
+
+
+
+.statusProduction img {
+	width: 0.7vw;
+	height: 0.7vw;
+}
+
+.tableCarousel {
+    height: 11vw;
+    overflow-x: auto;
+    margin-top: 0px;
+    /* margin-left: -4px; */
+    /* border: 1px solid rgba(255,255,255,0.3); */
+    /* width: 13vw; */
+    /* background-color: #031c2a; */
+    /* background: repeating-linear-gradient(-45deg, rgba(255,255,255,0.5),rgba(255,255,255,0.7) 10%); */
+    font-size: 1.2vw;
+    font-family: calibri;
+    border-bottom-left-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+    box-shadow: 1px 3px 7px rgba(56, 54, 54, 0.66);
+}
+
+.headerCarousel {
+    /* background-color: rgba(255,255,255,0.8); */
+    padding-left: 1vw;
+    /* border-left: 2px solid rgba(0, 0, 0, 0.8); */
+    /* border-right: 2px solid rgba(0, 0, 0, 0.8); */
+    /* border-top: 2px solid rgba(0, 0, 0, 0.8); */
+    border-top-left-radius: 0.3vw;
+    border-top-right-radius: 0.3vw;
+    font-weight: bold;
+    color: black /*var(--tableHeader)*/; 
+    letter-spacing: 2.5px;
+    width: calc(100% - 1.2vw);
+    height: 2vw;
+    z-index: 2;
+}
+
+.tableBackground {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.99;
+    margin-left: -1vw;
+    margin-top: -1.3vw;
+}
+
+.tableBackground img {
+    width: 23.8vw;
+    margin-left: 0.8vw;
+    margin-top: 0.9vw;
+    height: 14.6vw;
+    opacity: 0.98;
+}
+.dg-prev {
+    left: -2.8vw;
+    top: 2.9vw;
+    color: white;
+    font-size: 3vw;
+    z-index: 4;
+    position: fixed;
+}
+
+.dg-next {
+    left: 60.8vw;
+    top: 2.9vw;
+    color: white;
+    font-size: 3vw;
+    z-index: 4;
+    position: fixed;
+}
+
+

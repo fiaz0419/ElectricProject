@@ -1,4 +1,4 @@
-<div class="row">
+<div *ngIf="show" class="row">
 
     <app-comp2></app-comp2>
     <app-comp1></app-comp1>
@@ -6,4 +6,6 @@
                     
 </div>
 
+<div *ngIf="show" class="row" >
     <app-comp4></app-comp4>
+</div>

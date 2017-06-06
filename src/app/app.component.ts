@@ -14,9 +14,16 @@ export class AppComponent implements OnInit{
   title = 'app works!';
   constructor(){}
   ngOnInit():any {
+     jQuery('#menu-toggle').click(function(e){
+		e.preventDefault();
+		jQuery('#wrapper').toggleClass('menuDisplayed');
+
+	});
            
   }
   show : boolean = true ; 
+
+ 
 
 }
      

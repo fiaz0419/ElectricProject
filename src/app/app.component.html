@@ -1,11 +1,55 @@
-<div *ngIf="show" class="row">
+<div id="wrapper" class="menuDisplayed">
+		<!--Menu Bar Fixed top -->
+		<div id="navbar-wrapper"> 
+			<div id="top-navbar" class="navbar navbar-fixed-top"> 
+				<ul class="nav navbar-na">
+					<li> <a href="#" id="menu-toggle"> <i class="fa fa-bars"></i> </a> </li>
+				</ul>
+			</div>
+		</div>
+		<!--side bar-->
+		<div id="sidebar-wrapper">
+			<div class="nav_title">
+				<a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Project Name</span></a>
+			</div>
+			<div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="assets/img/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>John Doe</h2>
+              </div>
+            </div>
+			<ul class="sidebar-nav">
+				<li><a class="selected" href="#">Dashboard</a></li>
+				<li ><a (click)="show=!show" href="#">Account</a></li>
+				<li><a href="#">Settings</a></li>
+				<li><a href="#">Logout</a></li>
+			</ul>
+		</div>
+		<!-- Main Content -->
+		<div id="page-content-wrapper">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						
+                        <div *ngIf="show" class="row">
 
-    <app-comp2></app-comp2>
-    <app-comp1></app-comp1>
-    <app-comp3></app-comp3>
-                    
-</div>
+                            <app-comp2></app-comp2>
+                            <app-comp1></app-comp1>
+                            <app-comp3></app-comp3>
+                                            
+                        </div>
 
-<div *ngIf="show" class="row" >
-    <app-comp4></app-comp4>
-</div>
+                        <div *ngIf="show" class="row" >
+                            <app-comp4></app-comp4>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
